@@ -1,0 +1,67 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+.header {
+	width: 70%;
+	margin: auto;
+	height: 15%;
+	text-align: center;
+}
+header h1 {
+	font-size: 4em;
+}
+#s {
+	color: Turquoise;
+}
+.templates {
+	display: none;
+}
+.nav-bar {
+	list-style: none;
+}
+li {
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+#active-li {
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid Turquoise;
+}
+
+.nav-bar li a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+form {
+	position: relative;
+	text-align: center;
+	display: none;
+}
+
+.container {
+	width: 70%;
+	left: 15%;
+	right: 15%;
+	position: relative;
+	text-align: center;
+}
+input {
+	border-radius: 4px;
+	border: 1px solid Turquoise;
+	padding: 2px;
+	box-shadow: 5px 5px 15px Turquoise;
+	margin: 5px;
+}
+
+
+.quoteblock {
+	width: 80%;
+	margin: 100px auto;
+}

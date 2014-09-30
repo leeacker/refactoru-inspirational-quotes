@@ -4,22 +4,59 @@
   <meta charset="utf-8">
   <title>QuoteShare</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<div class="header">
-		<header></header>
+		<header><h1>Quote<span id='s'>S</span>hare</h1></header>
 		<nav>
 			<ul class="nav-bar">
 				<li><a href="#random">Random</a></li>
 				<li><a href="#highest">Highest Rating</a></li>
-				<li><a href="#alphabet">Alphabetical</a></li>
-				<li><a href="#mostrecent">Most Recent</a></li>
+				<li><a href="#alphabetical">Alphabetical</a></li>
+				<li><a id='add-quote-anchor' href="#add-quote">Add Quote</a></li>
 			</ul>
 		</nav>
 	</div>
+
+	<div class="form-div">
+		<form id="test-form">
+			<div><input name='text' type="text" placeholder='Quote Text...'>
+
+			<div><input name='author' type="text" placeholder='Quote Author'></div>
+
+			<div><input name='submit' type="submit" value='add new quote'></div>
+		</form>
+	</div>
+
+
 	<div class="container">
 		
+		
+	</div>
+
+
+
+	<div class="templates">
+
+	<!-- template for a new quote -->
+		<div id="newQuote">
+			<blockquote>
+				<h3></h3>
+				<p><span></span></p>
+			</blockquote>
+		</div>
+
+		<!-- template for form to add new quotes -->
+
+		<form id="new-form">
+			<div><input name='text' type="text" placeholder='Quote Text...'>
+
+			<div><input name='author' type="text" placeholder='Quote Author'></div>
+
+			<div><input name='submit' type="submit" value='add new quote'></div>
+		</form>
 
 	</div>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
