@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>QuoteShare</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -12,28 +13,28 @@
 		<header><h1>Quote<span id='s'>S</span>hare</h1></header>
 		<nav>
 			<ul class="nav-bar">
-				<li><a href="#random">Random</a></li>
-				<li><a href="#highest">Highest Rating</a></li>
-				<li><a href="#alphabetical">Alphabetical</a></li>
+				<li><a id="heart" href="#random"><i class="fa fa-heart"></i></a></li>
+				<li><a id="highest" href="#highest">Highest Rating</a></li>
+				<li><a id="alphabetical" href="#alphabetical">Alphabetical</a></li>
 				<li><a id='add-quote-anchor' href="#add-quote">Add Quote</a></li>
 			</ul>
 		</nav>
 	</div>
+	<div class="form-holder">
+		<div class="form-div">
+			<form id="test-form">
+				<div><input name='text' type="text" placeholder='Quote Text...'>
 
-	<div class="form-div">
-		<form id="test-form">
-			<div><input name='text' type="text" placeholder='Quote Text...'>
+				<div><input name='author' type="text" placeholder='Quote Author'></div>
 
-			<div><input name='author' type="text" placeholder='Quote Author'></div>
-
-			<div><input name='submit' type="submit" value='add new quote'></div>
-		</form>
+				<div><input id='submit' name='submit' type="submit" value='add new quote'></div>
+			</form>
+		</div>
 	</div>
-
 
 	<div class="container">
 		
-		
+
 	</div>
 
 
@@ -44,8 +45,17 @@
 		<div id="newQuote">
 			<blockquote>
 				<h3></h3>
-				<p><span></span></p>
+				<span></span>
+				||<div class='rating'>
+				<i id='star-1' class="fa fa-star-o"></i>
+				<i id='star-2' class="fa fa-star-o"></i>
+				<i id='star-3' class="fa fa-star-o"></i>
+				<i id='star-4' class="fa fa-star-o"></i>
+				<i id='star-5' class="fa fa-star-o"></i>
+				
 			</blockquote>
+			<i id='meh' class="fa fa-meh-o"></i>
+			<i id='heart' class="fa fa-heart-o"></i>
 		</div>
 
 		<!-- template for form to add new quotes -->
